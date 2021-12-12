@@ -132,7 +132,7 @@
 </a>
 
 <a>
-    <div class="qq">
+    <div onclick="cleard();" class="qq">
         <p> Back Space </p>
     </div> 
 </a>
@@ -431,9 +431,15 @@
    
    document.getElementById("myText").value = inp+TextInsideLi;
    
-   inp = inp+TextInsideLi
+   inp = inp+TextInsideLi;
    }
 
+
+	function cleard(){
+  	var x = inp.substring(1);
+     document.getElementById("myText").value = x;
+     inp = x;
+  }
 
 
     </script>
